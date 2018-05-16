@@ -1,0 +1,16 @@
+{
+  "name": "node-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build-addons": "node-gyp configure && node-gyp build",
+    "start": "npm run build-addons && node app.js"
+  },
+  "description": "NodeExpress",
+  "author": {
+    "name": "Tyler"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
