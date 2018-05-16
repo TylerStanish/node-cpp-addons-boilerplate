@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8.11)
+project(node-addons)
+include_directories(${PROJECT_SOURCE_DIR}/native/include)
+set(SOURCE_FILES ${PROJECT_SOURCE_DIR}/native/test.cpp)
+add_executable(node-addons ${SOURCE_FILES})
